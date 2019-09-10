@@ -63,10 +63,9 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Development"
+      buildConfiguration = "Deployment"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      enableAddressSanitizer = "YES"
       enableASanStackUseAfterReturn = "YES"
       disableMainThreadChecker = "YES"
       launchStyle = "0"
@@ -97,6 +96,11 @@
             key = "CG_CONTEXT_SHOW_BACKTRACE"
             value = "1"
             isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "DYLD_INSERT_LIBRARIES"
+            value = "/opt/Deploy/MalterlibMalloc_OSX_arm64/MalterlibMalloc.dylib"
+            isEnabled = "NO">
          </EnvironmentVariable>
       </EnvironmentVariables>
    </LaunchAction>
