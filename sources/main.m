@@ -15,7 +15,11 @@
 #import "iTermResourceLimitsHelper.h"
 #import "shell_launcher.h"
 
+void *fg_IdsGetCrossModuleMemoryManagerInterface(void);
+
 int main(int argc, const char *argv[]){
+    fg_IdsGetCrossModuleMemoryManagerInterface();
+
     if (argc > 1 && !strcmp(argv[1], "--launch_shell")) {
         // Run the user's shell.
         return launch_shell(argc > 2 ? argv[2] : NULL);

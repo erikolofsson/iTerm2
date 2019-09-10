@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		031EA5892327C0BB00549D28 /* MalterlibMalloc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 031EA5882327C0BA00549D28 /* MalterlibMalloc.dylib */; };
+		031EA58A2327C0E800549D28 /* MalterlibMalloc.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 031EA5882327C0BA00549D28 /* MalterlibMalloc.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		06E0C88E1DF9695400AA061B /* iTermServiceProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 06E0C88C1DF9695400AA061B /* iTermServiceProvider.h */; };
 		1D027C111CD1867000B0FBFF /* iTermColorPresets.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D027C0F1CD1867000B0FBFF /* iTermColorPresets.h */; };
 		1D0318281A42563A00932107 /* iTermImageWell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D0318261A42563A00932107 /* iTermImageWell.h */; };
@@ -3969,6 +3971,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				031EA58A2327C0E800549D28 /* MalterlibMalloc.dylib in CopyFiles */,
 				530AB89C20AFF23400D2AA08 /* CoreParse.framework in CopyFiles */,
 				A6184F8C1BAB3EF30088EF3C /* ColorPicker.framework in CopyFiles */,
 				A624232619CF70DF00182C08 /* NMSSH.framework in CopyFiles */,
@@ -4013,6 +4016,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		031EA5882327C0BA00549D28 /* MalterlibMalloc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = MalterlibMalloc.dylib; sourceTree = "<group>"; };
 		0464AB2F006CD2EC7F000001 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		06E0C88C1DF9695400AA061B /* iTermServiceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTermServiceProvider.h; sourceTree = "<group>"; };
 		06E0C88D1DF9695400AA061B /* iTermServiceProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTermServiceProvider.m; sourceTree = "<group>"; };
@@ -6629,6 +6633,7 @@
 				1DFA7C9E1923F77100DF1410 /* Security.framework in Frameworks */,
 				1D81F0BD183C3B0100910838 /* ScriptingBridge.framework in Frameworks */,
 				874206530564169600CFC3F1 /* AppKit.framework in Frameworks */,
+				031EA5892327C0BB00549D28 /* MalterlibMalloc.dylib in Frameworks */,
 				A6184F891BAB3ED70088EF3C /* ColorPicker.framework in Frameworks */,
 				530AB89920AFF21300D2AA08 /* CoreParse.framework in Frameworks */,
 				1D13EADC12113A2D00909F9C /* libncurses.dylib in Frameworks */,
@@ -7180,6 +7185,7 @@
 		1D03D42519144B8E0049EB8F /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				031EA5882327C0BA00549D28 /* MalterlibMalloc.dylib */,
 				A6EB203F223EC53F00E928C3 /* ini */,
 				A6A7A94D214393F1000DA2D4 /* hyper-tab-icons-plus */,
 				A69CCB13211BC284008ADA71 /* GZIP */,
@@ -14470,6 +14476,7 @@
 					"-licucore",
 					"-ObjC",
 					"-lc++",
+					"$(SRCROOT)/ThirdParty/MalterlibMalloc.dylib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.googlecode.iterm2;
 				PRODUCT_NAME = iTerm2;
@@ -15149,6 +15156,7 @@
 					"-licucore",
 					"-ObjC",
 					"-lc++",
+					"$(SRCROOT)/ThirdParty/MalterlibMalloc.dylib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.googlecode.iterm2;
 				PRODUCT_NAME = iTerm2;
@@ -16864,6 +16872,7 @@
 					"-licucore",
 					"-ObjC",
 					"-lc++",
+					"$(SRCROOT)/ThirdParty/MalterlibMalloc.dylib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.googlecode.iterm2;
 				PRODUCT_NAME = iTerm2;
@@ -16941,6 +16950,7 @@
 					"-licucore",
 					"-ObjC",
 					"-lc++",
+					"$(SRCROOT)/ThirdParty/MalterlibMalloc.dylib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.googlecode.iterm2;
 				PRODUCT_NAME = iTerm2;
